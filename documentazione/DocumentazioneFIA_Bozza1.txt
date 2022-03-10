@@ -1,0 +1,61 @@
+Descrizione dell'agente
+
+Lo scopo del progetto è quello di creare un agente capace di:
+-Raccomandare dei film sulla base di precedenti film visualizzati da un utente
+-Migliorare il sistema 
+
+------------------------------------
+Specifiche PEAS:
+
+-Performance:
+La misura di performance dell'agente è la sua capacità di avvicinarsi quanto piu possibile
+al mostrare i film piu simili rispetto a quelli gia visti.
+
+Enviroment:
+L'ambiente in cui opera l'agente è costituito dal dataset e il film visualizzato
+dall'utente:
+- Statico, in quanto l'ambiente non varia durante la elabrazione dell'utente
+- Episodico, perchè non ci sono influenze dai precedenti "episodi" di elaborazione dell'agente
+- Completamente osservabile, in quanto si ha accesso a tutti i film consigliabili e quello selezionato.
+- Deterministico o stocastico?
+- Discreto
+- Singolo agente
+
+Attuatori:
+
+L'agente ha un attuatore che consiste nel fornire una lista di film relativa a quello visualizzato
+dall'utente.
+
+Sensori:
+
+L'agente ha un sensore che consiste nel raccogliere il film visualizzato dall'utente sul quale
+basare le sue azioni.
+----------------------------------------
+
+2.3 Analisi del problema
+
+Inizialmente abbiamo approcciato al problema pensando che un classificatore fosse il miglior algoritmo
+da utilizzare. Dopo aver iniziato a sviluppare l'algoritmo abbiamo cambiato rotta in quanto non disponevamo
+di profili utente, ne di un sistema dotato di interfaccia grafica, successivamente abbiamo adottato un algoritmo
+di clustering che ci è sembrato piu adatto in relazione alle nostre risorse.
+- Approfondire scelta del classificatore e problemi incontrati
+- Approfondire scelta clustering e perchè funziona meglio nel nostro caso
+
+------------------------------------------------------------
+
+3 Raccolta, analisi e preprocessing dei dati
+
+Scelta del dataset:
+Per quanto riguarda la scelta del dataset del modello di machine learning abbiamo optato per la selezione
+di un dataset gia fornito da kaggle. Per quanto riguarda la nostra idea di modulo IA c'erano 3 diversi dataset
+idonei, abbiamo selezionato quello piu consistente.
+
+Non abbiamo valutato di creare un dataset da 0 in quanto troppo dispendioso per il nostro budget, avendo anche trovato
+degli ottimi dataset online.
+
+------------------------------------------------------------
+
+3.2 Analisi e scrematura del dataset
+
+Il dataset è disponibile al seguente link (kaggle.com / imdb) e contiene 1000 voci tra film e show televisivi
+selezionati da IMDB come classifica dei "top 1000". E' formato da 16 colonne, relative ai film, trame, generi, attori, votazioni etc.
