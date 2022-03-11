@@ -1,8 +1,9 @@
 Descrizione dell'agente
 
 Lo scopo del progetto è quello di creare un agente capace di:
--Raccomandare dei film sulla base di precedenti film visualizzati da un utente
--Migliorare il sistema 
+-Raccomandare dei film sulla base di precedenti film visualizzati, in modo da
+consigliare un contenuto possibilmente interessante
+
 
 ------------------------------------
 Specifiche PEAS:
@@ -59,3 +60,30 @@ degli ottimi dataset online.
 
 Il dataset è disponibile al seguente link (kaggle.com / imdb) e contiene 1000 voci tra film e show televisivi
 selezionati da IMDB come classifica dei "top 1000". E' formato da 16 colonne, relative ai film, trame, generi, attori, votazioni etc.
+Inizialmente abbiamo trovato vari dataset possibilmente adatti al nostro agente, circa 3, quello di imdb è stato selezionato valutando
+la qualità e usabilità dei dati.
+Dimensione: 438 Kb
+Usability: 10.0 (kaggle)
+Data governance: CC0: Public Domain
+
+
+"In maniera simile alla classificazione, un problema di clustering ha l’obiettivo di
+classificare i dati, ma senza assegnare loro un’etichetta."
+
+
+Il primo approccio è stato quello di cercare una correlazione tra le varie colonne per poi magari 
+adottare un algoritmo di clustering. La scelta è stata di cercare una correlazione tra voto di critica e
+pubblico
+Scarsa correlazione tra voto di critica e pubblico, di conseguenza inutile fare clustering, 
+ci limiteremo a fare una media flat dei valori null Metascore.
+Nel corso dello sviluppo abbiamo incontrato diverse problematiche.
+-Algoritmo selezionato Naive Bayes
+-Vedere slide
+-Valutare algoritmo clustering 
+
+Successivimente abbiamo deciso di utilizzare un classificatore con classificazione probabilista, adottando
+Naive Bayes con le colonne relative alla votazione del pubblico e della critica.
+-Algoritmo
+
+Il risultato non era soddisfacente, cosi abbiamo provato a ritornare su un algoritmo di clustering scegliendo
+stavolta tutti i dati in stringhe.
