@@ -1,6 +1,6 @@
 # Movies - Recommender
 
-# Introduction
+# Introduzione
 
 L'obiettivo del progetto è quello di consigliare film ad utenti tramite la predizione del rating dei film.
 
