@@ -1,4 +1,4 @@
-# Movies - Recommender
+# Movie Recommender
 
 # Introduzione
 
