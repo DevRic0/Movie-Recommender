@@ -19,6 +19,6 @@ documentazione:
 - Report_Progetto_MR: contiene la documentazione del progetto
 
 ml_pipeline: contiene il codice sul progetto opportunamente diviso in sezioni:
-- Movie_Recommender_Clustering: codice relativo all'algoritmo di clustering (utile per visualizzare commit e modifiche al codice)
-- Movie_Recommender_DecisionTree: codice relativo all'algoritmo di classificazione (utile per visualizzare commit e modifiche al codice)
+- Movie_Recommender_Clustering: codice relativo all'algoritmo di clustering (utile alla visualizzazione dei commit e delle modifiche al codice)
+- Movie_Recommender_DecisionTree: codice relativo all'algoritmo di classificazione (utile alla visualizzazione dei commit e delle modifiche al codice)
 - Movie_Recommender: elaborato finale
