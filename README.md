@@ -9,10 +9,18 @@ L'obiettivo viene perseguito tramite l'utilizzo di un albero decisionale, sulla 
 # Directory
 
 dataset:
-  - Contiene i dati relativi ai film e agli utenti
+  - Contiene i dati relativi ai film e agli utenti:
+          - stopwords.txt: File contenente parole da eliminare nella sinossi dei film, al fine di lasciare le più rilevanti (utilizzato nell'algoritmo di clustering)
+          -
+          -
+          -
+          -
 
 documentazione:
   - Contiene la documentazione riguardo il progetto in questione
 
 ml_pipeline:
-  - Contiene il codice sul progetto opportunamente diviso in sezioni
+  - Contiene il codice sul progetto opportunamente diviso in sezioni:
+          -
+          -
+          -
